@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+}
+
+h1 {
+  width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+h1 a, h1 a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+h1 a:hover {
+  background: #ff3;
+}
+
+code {
+  background: #ffd;
+  border: #ff9 1px solid;
+  /*
+  padding: 2px;
+  */
+  font-size: large;
+}
+
+pre {
+  background: #ffd;
+  border: #ff9 1px solid;
+  padding: 5px;
+  font-size: large;
+}
+
+pre code {
+  border: none;
+  /*
+  padding: 3px;
+  */
+}
+
+#body {
+  width: 800px;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+#header {
+  background: #ffc
+}
+
+#header .nav {
+  width: 800px;
+  margin: auto;
+  padding-bottom: 10px
+}
+
+#header .nav a, #header .nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#header .nav a:hover {
+  background: #ff3;
+}
+
+.subnav {
+  margin-top: -20px;
+  font-size: small;
+}
