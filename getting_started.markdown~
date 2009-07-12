@@ -36,8 +36,8 @@ Depending on the model you're using, you might notice a few things:
 
 * Boolean values can be toggled on and off in the index view.
 * Any belongs-to associations are handled in the form by either a drop-down, or an Ajax autocompleter, depending on how many choices there are for the association.
-* There is no "delete" action out of the box. This is intended as a safe default, but you can add the delete action if you like.
-* If you have more than 10 pages of a given model, the pagination at the bottom includes a "jump" form to let you automatically jump to a page you enter.
+* There is no `destroy` action out of the box. This is intended as a safe default, but you can add it if you like.
+* If you have more than 10 pages of a given model, the pagination at the bottom includes a jump form to let you automatically jump to a page you enter.
 
 For more, check out the [API reference](/api/).
 

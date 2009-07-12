@@ -25,6 +25,7 @@
     </h2>
     <div class="subnav">
       <a href="/api/core.html">Core</a> | 
+      <a href="/api/destroy.html">Destroy</a> | 
       <a href="/api/form.html">Form</a> |
       <a href="/api/idx.html">Index</a> |
       <a href="/api/search.html">Search</a> |

@@ -2,37 +2,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>admin_assistant: API: Form</title>
-    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen">
   </head>
 
   <body>
     <div id="page_header">
     <h1>admin_assistant</h1>
     <div class="nav">
-      <a href="/">Home</a> |
-      <a href="/getting_started.html">Getting&nbsp;started</a> |
-      <a href="/api/">API&nbsp;reference</a> |
-      <a href="/community.html">Community</a> |
-      <a href="/design_principles.html">Design&nbsp;principles</a> |
+      <a href="../">Home</a> |
+      <a href="../getting_started.html">Getting&nbsp;started</a> |
+      <a href="../api/">API&nbsp;reference</a> |
+      <a href="../community.html">Community</a> |
+      <a href="../design_principles.html">Design&nbsp;principles</a> |
       <a href="http://groups.google.com/group/admin_assistant">Mailing&nbsp;list</a> |
       <a href="http://github.com/fhwang/admin_assistant">Github&nbsp;page</a>
     </div>
     </div>
     <div id="body">
     <h2>
-    <a href="/api/">API</a>
+    <a href="../api/">API</a>
     : Form
     </h2>
     <div class="subnav">
-      <a href="/api/core.html">Core</a> | 
-      <a href="/api/destroy.html">Destroy</a> | 
-      <a href="/api/form.html">Form</a> |
-      <a href="/api/idx.html">Index</a> |
-      <a href="/api/search.html">Search</a> |
-      <a href="/api/show.html">Show</a>
+      <a href="../api/core.html">Core</a> | 
+      <a href="../api/destroy.html">Destroy</a> | 
+      <a href="../api/form.html">Form</a> |
+      <a href="../api/idx.html">Index</a> |
+      <a href="../api/search.html">Search</a> |
+      <a href="../api/show.html">Show</a>
     </div>
 
-    <p><img src='/img/user-form.png' alt='form' /></p>
+    <p><img src='./img/user-form.png' alt='form' /></p>
 
 <p>Form configuration affects both creating new records and updating existing records. Most of its customization happens through the form builder object:</p>
 
@@ -227,7 +227,13 @@ end</code></pre>
 
 <p>You can also create a partial named <code>_[column]_input.html.erb</code>.</p>
 
-<h4 id='column'>[column\</h4>
+<h4 id='column_string'>[column]_string</h4>
+
+<p>If this helper method is present, its returned string will be rendered within a text field. Odds are you&#8217;ll use this with the controller method <code>[column]_from_form</code>, above.</p>
+
+<pre><code>def tags_string(blog_post)
+  blog_post.tags.map { |tag| tag.tag }.join &#39; &#39;
+end</code></pre>
 
 <h3 id='partials'>Partials</h3>
 

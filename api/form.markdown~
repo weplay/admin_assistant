@@ -187,6 +187,16 @@ Used for image fields. If a file field already exists, and the user clicks on th
 
 ### Helper methods
 
+#### after\_\[column\]\_input
+
+If this helper method is present, whatever text it returns will be rendered after the default input for the column in the form. Takes the record as its only argument. You can also create a partial named `_after_[column]_input.html.erb`.
+
+    def after_password_input(user)
+      if user.id
+        "Reset #{check_box_tag('reset_password')}"
+      end
+    end
+
 #### \[column\]\_input
 
 If this helper method is present, whatever text it returns will be rendered instead of the default input for the column in the form. If it returns nil, the default input will be rendered instead. Takes the record as its only argument.
@@ -199,15 +209,14 @@ If this helper method is present, whatever text it returns will be rendered inst
 
 You can also create a partial named `_[column]_input.html.erb`.
 
-#### after\_\[column\]\_input
+#### \[column\]\_string
 
-If this helper method is present, whatever text it returns will be rendered after the default input for the column in the form. Takes the record as its only argument. You can also create a partial named `_after_[column]_input.html.erb`.
+If this helper method is present, its returned string will be rendered within a text field. Odds are you'll use this with the controller method `[column]_from_form`, above.
 
-    def after_password_input(user)
-      if user.id
-        "Reset #{check_box_tag('reset_password')}"
-      end
+    def tags_string(blog_post)
+      blog_post.tags.map { |tag| tag.tag }.join ' '
     end
+
 
 ### Partials
 

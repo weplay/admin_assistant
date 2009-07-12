@@ -176,7 +176,17 @@ By default, there are two links on the right-hand side of the row for each model
 
 Also see the builder method [right\_column\_links](#builder_right_column_links).
     
-    
+### Partials
+
+#### \_after\_index.html.erb
+
+If this partial is present, it will be rendered after the entire index HTML.
+
+#### \_before\_index.html.erb
+
+If this partial is present, it will be rendered before the entire index HTML.
+
+
 
 [FileColumn]: http://www.kanthak.net/opensource/file_column/
 [Paperclip]: http://thoughtbot.com/projects/paperclip
