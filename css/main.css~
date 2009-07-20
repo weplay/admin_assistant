@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  width: 800px;
+  width: 900px;
   margin: auto;
   padding: 10px;
 }
@@ -21,9 +21,6 @@ h1 a:hover {
 code {
   background: #ffd;
   border: #ff9 1px solid;
-  /*
-  padding: 2px;
-  */
   font-size: large;
 }
 
@@ -42,27 +39,27 @@ pre code {
 }
 
 #body {
-  width: 800px;
+  width: 900px;
   margin: auto;
   padding-bottom: 25px;
 }
 
-#header {
+#page_header {
   background: #ffc
 }
 
-#header .nav {
-  width: 800px;
+#page_header .nav {
+  width: 900px;
   margin: auto;
   padding-bottom: 10px
 }
 
-#header .nav a, #header .nav a:visited {
+#page_header .nav a, #page_header .nav a:visited {
   text-decoration: none;
   color: black;
 }
 
-#header .nav a:hover {
+#page_header .nav a:hover {
   background: #ff3;
 }
 

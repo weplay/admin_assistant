@@ -51,7 +51,8 @@ pre code {
 #page_header .nav {
   width: 900px;
   margin: auto;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  line-height: 150%;
 }
 
 #page_header .nav a, #page_header .nav a:visited {
