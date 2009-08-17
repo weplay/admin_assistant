@@ -1,0 +1,29 @@
+---
+layout: default
+title:  Screenshots
+---
+
+1. With a few lines of code, admin_assistant gives you a lot of default functionality for one model, including an index view with pagination and sorting, search, creating, and editing.
+
+2. Sorting is built-in, and done in the URL for easy bookmarking, etc.
+
+3. If there are many results, the pagination section will include a form for jumping to a specific page quickly.
+
+4. By default, any boolean field on the model can be toggled in the index view with an Ajax link.
+
+5. New and edit pages render default widgets for each column on the model. The published_at field, which is a datetime, gets a "Clear" javascript link by default.
+
+6. If the model has a belongs-to association, and there are too many records on that associated table to be usable in a dropdown, admin_assistant renders an autocompleter instead.
+
+7. On the form, individual column inputs on the form can be overridden with custom logic. On this admin controller for the Product model, the column "price" is being rendered with the ERB template _price_input.html.erb. The submitted parameters are then pre-processed with a protected controller method called price_from_form.
+
+8. Note also that the text in the default "Clear" links has been configured here as well.
+
+9. A customized search form can give you searching by specific columns. The user can choose to match all or any of the conditions. Also, numerical fields include comparators by default, so, for example, you can search for all products costing greater than $100.
+
+10. The same autocompleting for belongs-to associations is also available in the search form. In this example, the user is searching for blog posts by author.
+
+11. There is an option to use the ActiveScaffold style of the application, which may come in handy if you're in the process of transitioning away from ActiveScaffold.
+
+12. admin_assistant handles images out of the box through either Paperclip or FileColumn.
+

@@ -3,13 +3,18 @@
   <head>
     <title>admin_assistant: Design principles</title>
     <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen">
-  </head>
+
+    <script type="text/javascript" src="/js/prototype.js"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+    </head>
 
   <body>
     <div id="page_header">
-    <h1>admin_assistant</h1>
+    <h1><a href="/">admin_assistant</a></h1>
     <div class="nav">
-      <a href="./">Home</a> |
+      <a href="./screenshots.html">Screenshots</a> |
       <a href="./getting_started.html">Getting&nbsp;started</a> |
       <a href="./api/">API&nbsp;reference</a> |
       <a href="./community.html">Community</a> |
@@ -32,7 +37,7 @@
 
 <h3 id='wide_support_of_rails_versions'>Wide support of Rails versions</h3>
 
-<p>admin_assistant currently supports four versions of Rails: 2.1.0, 2.1.2, 2.2.2, and 2.3.2. We offer this support by writing a test suite that can be run with different versions of Rails. After all, it doesn&#8217;t make any sense to release a plugin intended for other programmers&#8217; convenience, and then tell them to drop everything and spend the next two weeks upgrading their whole app.</p>
+<p>admin_assistant currently supports five versions of Rails: 2.1.0, 2.1.2, 2.2.2, 2.3.2, and 2.3.3. We offer this support by writing a test suite that can be run with different versions of Rails. After all, it doesn&#8217;t make any sense to release a plugin intended for other programmers&#8217; convenience, and then tell them to drop everything and spend the next two weeks upgrading their whole app.</p>
 
 <h3 id='deeply_customizable_api'>Deeply customizable API</h3>
 
