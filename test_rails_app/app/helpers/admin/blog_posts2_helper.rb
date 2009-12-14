@@ -21,7 +21,7 @@ module Admin::BlogPosts2Helper
     'custom_td_css_class'
   end
 
-  def tr_css_class_for_index(blog_post)
+  def css_class_for_index_tr(blog_post)
     'custom_tr_css_class'
   end
 end
