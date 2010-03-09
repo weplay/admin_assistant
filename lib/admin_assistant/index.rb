@@ -276,7 +276,6 @@ class AdminAssistant
         links = []
         links << edit_link(record) if render_edit_link?(record)
         links << delete_link(record) if render_delete_link?(record)
-
         if render_show_link?(record)
           links << @action_view.link_to(
             'Show', :action => 'show', :id => record.id
