@@ -86,6 +86,14 @@ class AdminAssistant
       end
     end
     
+    def respond_to?(meth)
+      if @attributes.has_key?(meth)
+        true
+      else
+        super
+      end
+    end
+    
     def model_class
       @admin_assistant.model_class
     end
