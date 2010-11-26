@@ -1,5 +1,3 @@
-require 'rake'
-
 Gem::Specification.new do |s|
   s.name = 'admin_assistant'
   s.version = '1.0.0'
@@ -9,12 +7,20 @@ Gem::Specification.new do |s|
   s.summary = 'admin_assistant is a Rails plugin that automates a lot of features typically needed in admin interfaces.'
   s.email = 'sera@fhwang.net'
   s.homepage = 'http://github.com/fhwang/admin_assistant/tree/master'
-  s.files = FileList[%w(
-    MIT-LICENSE README *.rb Rakefile lib/*.rb lib/admin_assistant/*.rb 
-    lib/admin_assistant/*/*.rb lib/images/*.png lib/javascripts/*.js
-    lib/stylesheets/*.css lib/views/*.erb tasks/*.rake 
-    vendor/ar_query/MIT-LICENSE vendor/ar_query/README vendor/ar_query/*.rb 
-    vendor/ar_query/*/*.rb vendor/ar_query/*/*.rake
-  )].to_a
+  s.files = %w(MIT-LICENSE README) +
+            Dir.glob('*.rb') + 
+            ['Rakefile'] +
+            Dir.glob('lib/*.rb') +
+            Dir.glob('lib/admin_assistant/*.rb') + 
+            Dir.glob('lib/admin_assistant/*/*.rb') +
+            Dir.glob('lib/images/*.png') +
+            Dir.glob('lib/javascripts/*.js') +
+            Dir.glob('lib/stylesheets/*.css') +
+            Dir.glob('lib/views/*.erb') +
+            Dir.glob('tasks/*.rake') +
+            %w(vendor/ar_query/MIT-LICENSE vendor/ar_query/README) +
+            Dir.glob('vendor/ar_query/*.rb') +
+            Dir.glob('vendor/ar_query/*/*.rb') +
+            Dir.glob('vendor/ar_query/*/*.rake')
   s.add_dependency 'will_paginate'
 end
