@@ -1,5 +1,3 @@
-require 'admin_assistant/request/base'
-
 class AdminAssistant
   module Request
     class Show < Base

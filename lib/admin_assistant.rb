@@ -1,12 +1,33 @@
 $: << File.join(File.dirname(__FILE__), '../vendor/ar_query/lib')
 require 'find'
 require 'admin_assistant/column'
-Find.find(File.dirname(__FILE__)) do |path|
-  if path =~ %r|\.rb$| && path !~ %r|admin_assistant\.rb$| &&
-     path !~ %r|admin_assistant/column\.rb$|
-    require path
-  end
-end
+require 'admin_assistant/virtual_column'
+
+require 'admin_assistant/show_view.rb'
+require 'admin_assistant/search.rb'
+require 'admin_assistant/request/base.rb'
+require 'admin_assistant/request/update.rb'
+require 'admin_assistant/request/show.rb'
+require 'admin_assistant/request/new.rb'
+require 'admin_assistant/request/index.rb'
+require 'admin_assistant/request/edit.rb'
+require 'admin_assistant/request/destroy.rb'
+require 'admin_assistant/request/create.rb'
+require 'admin_assistant/request/autocomplete.rb'
+require 'admin_assistant/polymorphic_belongs_to_column.rb'
+require 'admin_assistant/paperclip_column.rb'
+require 'admin_assistant/index.rb'
+require 'admin_assistant/helper.rb'
+require 'admin_assistant/has_many_column.rb'
+require 'admin_assistant/form_view.rb'
+require 'admin_assistant/file_column_column.rb'
+require 'admin_assistant/default_search_column.rb'
+require 'admin_assistant/date_time_range_end_point_selector.rb'
+require 'admin_assistant/builder.rb'
+require 'admin_assistant/belongs_to_column.rb'
+require 'admin_assistant/association_target.rb'
+require 'admin_assistant/active_record_column.rb'
+
 require 'will_paginate'
 
 class AdminAssistant
