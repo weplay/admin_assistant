@@ -72,6 +72,9 @@ class AdminAssistant
         html << render_to_string_if_exists(
           after_template_file(template_name), opts_plus
         )
+        if html.respond_to?(:html_safe)
+          html = html.html_safe
+        end
         render_as_text_opts = {:text => html, :layout => true}.merge(opts_plus)
         @controller.send :render, render_as_text_opts
       end
