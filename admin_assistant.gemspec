@@ -64,7 +64,7 @@ Gem::Specification.new do |s|
      "lib/views/index.html.erb",
      "lib/views/multi_form.html.erb",
      "lib/views/show.html.erb",
-     "tasks/admin_assistant_tasks.rake",
+     "lib/tasks/admin_assistant_tasks.rake",
      "uninstall.rb",
      "vendor/ar_query/MIT-LICENSE",
      "vendor/ar_query/README",
