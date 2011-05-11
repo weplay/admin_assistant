@@ -58,8 +58,6 @@ Gem::Specification.new do |s|
      "lib/stylesheets/activescaffold.css",
      "lib/stylesheets/default.css",
      "lib/views/_polymorphic_field_search.html.erb",
-     "lib/views/_restricted_autocompleter.html.erb",
-     "lib/views/autocomplete.html.erb",
      "lib/views/form.html.erb",
      "lib/views/index.html.erb",
      "lib/views/multi_form.html.erb",
